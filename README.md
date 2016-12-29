@@ -1,1 +1,1 @@
-# tools-windows_serivces
+将windows应用程序注册为服务,切换到nssm.exe所在目录,输入nssm install test_service即可,然后会弹出界面对话框选择EXE所在目录和环境目录,环境目录默认不需要修改,点击确定服务就注册好了,在windows中输入services.msc就能查找到刚刚注册的test_service服务，注册类型为自启动，但是第一次是没有启动的状态，需要手动开启或者重启操作系统；如果不需要该服务,在cmd中输入sc delete test_service
